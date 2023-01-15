@@ -24,9 +24,6 @@
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, 1fr);
 	border-radius: 8px;
-
-	/* grid-template-rows: 1fr;
-	grid-template-columns: repeat(3, 1fr); desktop*/
 }
 
 .card {
@@ -102,4 +99,30 @@
 
 .btn--luxury a {
 	color: var(--luxury-card-color);
+}
+
+/* Desktop version
+@media (min-width: 920px) {
+} */
+
+.cards-container {
+	grid-template-rows: 1fr;
+	grid-template-columns: repeat(3, 1fr);
+	height: initial;
+}
+
+.card {
+	max-width: 307px;
+}
+
+.card--sedan {
+	border-radius: 8px 0 0 8px;
+}
+
+.card--luxury {
+	border-radius: 0 8px 8px 0;
+}
+
+.btn {
+	margin-top: 58px;
 }
