@@ -7,3 +7,51 @@
 	--luxury-card-color: #004140;
 	--text-color: #ffffff;
 }
+
+.page {
+	background-color: var(--background-color);
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.cards-container {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(3, 1fr);
+	border-radius: 8px;
+
+	/* grid-template-rows: 1fr;
+	grid-template-columns: repeat(3, 1fr); desktop*/
+}
+
+.card {
+	padding: 48px;
+	max-width: 327px;
+}
+
+.card--sedan {
+	background-color: var(--sedan-card-color);
+	border-radius: 8px 8px 0 0;
+}
+
+.card--suvs {
+	background-color: var(--suvs-card-color);
+}
+
+.card--luxury {
+	background-color: var(--luxury-card-color);
+}
+
+.card--sedan .card__logo::before {
+	content: url(../images/icon-sedans.svg);
+}
+
+.card--suvs .card__logo::before {
+	content: url(../images/icon-suvs.svg);
+}
+
+.card--luxury .card__logo::before {
+	content: url(../images/icon-luxury.svg);
+}
