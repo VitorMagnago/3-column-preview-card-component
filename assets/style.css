@@ -1,0 +1,9 @@
+@import url(reset.css);
+
+:root {
+	--background-color: #f2f2f2;
+	--sedan-card-color: #e28625;
+	--suvs-card-color: #006971;
+	--luxury-card-color: #004140;
+	--text-color: #ffffff;
+}
