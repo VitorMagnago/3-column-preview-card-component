@@ -101,28 +101,26 @@
 	color: var(--luxury-card-color);
 }
 
-/* Desktop version
 @media (min-width: 920px) {
-} */
+	.cards-container {
+		grid-template-rows: 1fr;
+		grid-template-columns: repeat(3, 1fr);
+		height: initial;
+	}
 
-.cards-container {
-	grid-template-rows: 1fr;
-	grid-template-columns: repeat(3, 1fr);
-	height: initial;
-}
+	.card {
+		max-width: 307px;
+	}
 
-.card {
-	max-width: 307px;
-}
+	.card--sedan {
+		border-radius: 8px 0 0 8px;
+	}
 
-.card--sedan {
-	border-radius: 8px 0 0 8px;
-}
+	.card--luxury {
+		border-radius: 0 8px 8px 0;
+	}
 
-.card--luxury {
-	border-radius: 0 8px 8px 0;
-}
-
-.btn {
-	margin-top: 58px;
+	.btn {
+		margin-top: 58px;
+	}
 }
