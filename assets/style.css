@@ -6,6 +6,8 @@
 	--suvs-card-color: #006971;
 	--luxury-card-color: #004140;
 	--text-color: #ffffff;
+	--title-font: "Big Shoulders Display", cursive;
+	--text-font: "Lexend Deca", sans-serif;
 }
 
 .page {
@@ -17,6 +19,7 @@
 }
 
 .cards-container {
+	/* height: 100%; */
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: repeat(3, 1fr);
@@ -42,6 +45,7 @@
 
 .card--luxury {
 	background-color: var(--luxury-card-color);
+	border-radius: 0 0 8px 8px;
 }
 
 .card--sedan .card__logo::before {
@@ -54,4 +58,43 @@
 
 .card--luxury .card__logo::before {
 	content: url(../images/icon-luxury.svg);
+}
+
+.card__title {
+	font-family: var(--title-font);
+	font-size: 2.5rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--background-color);
+}
+
+.card__text {
+	font-family: var(--text-font);
+	font-size: 0.9375rem;
+	font-weight: 400;
+	color: var(--text-color);
+	line-height: 167%;
+	mix-blend-mode: normal;
+	opacity: 0.75;
+}
+
+.btn {
+	display: inline-block;
+	padding: 12px 32px;
+	background-color: var(--background-color);
+	border-radius: 25px;
+	font-family: var(--text-font);
+	font-size: 0.9375rem;
+}
+
+.btn--sedan a {
+	color: var(--sedan-card-color);
+}
+
+.btn--suv a {
+	color: var(--suvs-card-color);
+}
+
+.btn--luxury a {
+	color: var(--luxury-card-color);
 }
